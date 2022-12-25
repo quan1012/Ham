@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="inNumber" oninput="factorialNumCount(this.value)" onchange="factorialNumCount(this.value)">
+<p id="result"></p
+</body>
+<script>
+    function factorialNumCount(n) {
+        let giaithua = 1;
+        for (let i = 1; i <= n; i++) {
+            giaithua *= i;
+        }
+        document.getElementById("result").innerHTML = "Gia thua cua " + n + " la " + giaithua;
+    }
+</script>
+</html>

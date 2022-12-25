@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="number" onchange="checkNum(this.value)" >
+</body>
+<script>
+  function checkNum(number){
+    let result=parseInt(number)
+    if(number==result){
+      // alert(number+" la so")
+      return true;
+    }else{
+      // alert(number+" khong phai la so")
+      return false;
+    }
+  }
+</script>
+</html>

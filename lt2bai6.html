@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập số</p>
+<input id="inputNum" onchange="checkNum(this.value)">
+</body>
+<script>
+  function checkNum(num) {
+    let positive = Math.sign(num);
+    console.log(positive);
+  }
+
+  function dislay() {
+    if (checkNum() === 1) {
+      return true;
+    } else if (checkNum() === 0) {
+      document.write("Số 0 không phải số nguyên âm cũng không phải số nguyên dương.")
+    } else {
+      return false;
+    }
+  }
+</script>
+</html>
